@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Script version="4.6" platform="Desktop">
+<Node type="Main" expand="True">
+<A2OSvcName><![CDATA[default]]></A2OSvcName>
+<A2OSvcDesc><![CDATA[]]></A2OSvcDesc>
+<A2OSvcFunc><![CDATA[]]></A2OSvcFunc>
+<GlobalExceptionPropagation>True</GlobalExceptionPropagation>
+<GlobalExceptionUse>False</GlobalExceptionUse>
+<ID>bggdcaajgbbjc0004</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+<Nodes>
+<Node type="Sequence" expand="True">
+<If><![CDATA[true]]></If>
+<GlobalExceptionPropagation>True</GlobalExceptionPropagation>
+<GlobalExceptionUse>False</GlobalExceptionUse>
+<ID>bggdcabaiejhf0009</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[조건분기]]></Desc>
+<Nodes>
+<Node type="Set" expand="False">
+<Name><![CDATA[branch_str]]></Name>
+<NameType><![CDATA[False]]></NameType>
+<Type><![CDATA[object]]></Type>
+<Value><![CDATA["first"]]></Value>
+<ValueType><![CDATA[False]]></ValueType>
+<If><![CDATA[true]]></If>
+<EncriptType><![CDATA[False]]></EncriptType>
+<ID>bggdcabbffeji000b</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+</Node>
+<Node type="Set" expand="False">
+<Name><![CDATA[branch_str]]></Name>
+<NameType><![CDATA[False]]></NameType>
+<Type><![CDATA[object]]></Type>
+<Value><![CDATA["second"]]></Value>
+<ValueType><![CDATA[False]]></ValueType>
+<If><![CDATA[true]]></If>
+<EncriptType><![CDATA[False]]></EncriptType>
+<ID>bggdcabcafhfd000c</ID>
+<Checked>False</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+</Node>
+<Node type="Set" expand="False">
+<Name><![CDATA[result]]></Name>
+<NameType><![CDATA[False]]></NameType>
+<Type><![CDATA[object]]></Type>
+<Value><![CDATA[""]]></Value>
+<ValueType><![CDATA[False]]></ValueType>
+<If><![CDATA[true]]></If>
+<EncriptType><![CDATA[False]]></EncriptType>
+<ID>bggdcabccbeib000d</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+</Node>
+<Node type="Branch" expand="True">
+<Conditions>
+<Node type="If" expand="True">
+<Expression><![CDATA[@branch_str.string@ == "first"]]></Expression>
+<GlobalExceptionPropagation>True</GlobalExceptionPropagation>
+<GlobalExceptionUse>False</GlobalExceptionUse>
+<ID>bggdcabcgadja000f</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[조건 추가]]></Desc>
+<Nodes>
+<Node type="Set" expand="False">
+<Name><![CDATA[result]]></Name>
+<NameType><![CDATA[False]]></NameType>
+<Type><![CDATA[object]]></Type>
+<Value><![CDATA["first_answer"]]></Value>
+<ValueType><![CDATA[False]]></ValueType>
+<If><![CDATA[true]]></If>
+<EncriptType><![CDATA[False]]></EncriptType>
+<ID>bggdcabcjicjh0010</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+</Node>
+</Nodes>
+</Node>
+<Node type="If" expand="True">
+<Expression><![CDATA[@branch_str.string@ == "second"]]></Expression>
+<GlobalExceptionPropagation>True</GlobalExceptionPropagation>
+<GlobalExceptionUse>False</GlobalExceptionUse>
+<ID>bggdcabdcbfji0011</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[조건 추가]]></Desc>
+<Nodes>
+<Node type="Set" expand="False">
+<Name><![CDATA[result]]></Name>
+<NameType><![CDATA[False]]></NameType>
+<Type><![CDATA[object]]></Type>
+<Value><![CDATA["second_answer"]]></Value>
+<ValueType><![CDATA[False]]></ValueType>
+<If><![CDATA[true]]></If>
+<EncriptType><![CDATA[False]]></EncriptType>
+<ID>bggdcabdegfcb0012</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+</Node>
+</Nodes>
+</Node>
+</Conditions>
+<ID>bggdcabcdhjec000e</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[조건 분기문]]></Desc>
+</Node>
+</Nodes>
+</Node>
+</Nodes>
+</Node>
+<Exceptions type="Exceptions" expand="False">
+<ID>bggdcaajgbbjc0005</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+<Nodes>
+</Nodes>
+</Exceptions>
+<GlobalNodes type="GlobalNodes" expand="False">
+<ID>bggdcaajgbbjc0006</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+<Nodes>
+</Nodes>
+</GlobalNodes>
+<Data>
+<Lists>
+</Lists>
+<Tables>
+</Tables>
+</Data>
+</Script>
+<!--61D8AE9EC02ECC681BC02D787DF1A34CB338FF0FAB66B73E67391C7A8002070E-->

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Script version="4.6" platform="Desktop">
+<Node type="Main" expand="True">
+<A2OSvcName><![CDATA[default]]></A2OSvcName>
+<A2OSvcDesc><![CDATA[]]></A2OSvcDesc>
+<A2OSvcFunc><![CDATA[]]></A2OSvcFunc>
+<GlobalExceptionPropagation>True</GlobalExceptionPropagation>
+<GlobalExceptionUse>False</GlobalExceptionUse>
+<ID>bggdcabeaeiec0013</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+<Nodes>
+<Node type="Sequence" expand="True">
+<If><![CDATA[true]]></If>
+<GlobalExceptionPropagation>True</GlobalExceptionPropagation>
+<GlobalExceptionUse>False</GlobalExceptionUse>
+<ID>bggdcabebgahb0016</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[클립보드 사용]]></Desc>
+<Nodes>
+<Node type="Set" expand="False">
+<Name><![CDATA[var_clip]]></Name>
+<NameType><![CDATA[False]]></NameType>
+<Type><![CDATA[object]]></Type>
+<Value><![CDATA["gridone"]]></Value>
+<ValueType><![CDATA[False]]></ValueType>
+<If><![CDATA[true]]></If>
+<EncriptType><![CDATA[False]]></EncriptType>
+<ID>bggdcabeciicf0018</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+</Node>
+<Node type="SetClipboardText" expand="False">
+<InputText><![CDATA[@var_clip:string@]]></InputText>
+<If><![CDATA[true]]></If>
+<ID>bggdcabeggbig0019</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[클립보드에 문자열 밀어 넣기]]></Desc>
+</Node>
+<Node type="GetClipboardText" expand="False">
+<Into><![CDATA[var_clipdata]]></Into>
+<If><![CDATA[true]]></If>
+<ID>bggdcabfahfeg001a</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[클립보드로부터 문자열 가져오기]]></Desc>
+</Node>
+<Node type="SetClipboardImage" expand="False">
+<ImagePath><![CDATA["C:\\automateOne\\Desktop\\Script samples\\"+"01-3_Office.jpg"]]></ImagePath>
+<If><![CDATA[true]]></If>
+<ID>bggdcabffcjag001b</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[클립보드로 이미지 밀어넣기]]></Desc>
+</Node>
+</Nodes>
+</Node>
+</Nodes>
+</Node>
+<Exceptions type="Exceptions" expand="False">
+<ID>bggdcabeaeiec0014</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+<Nodes>
+</Nodes>
+</Exceptions>
+<GlobalNodes type="GlobalNodes" expand="False">
+<ID>bggdcabeaeied0015</ID>
+<Checked>True</Checked>
+<SaveImagesOnResult>True</SaveImagesOnResult>
+<OnErrorExit>True</OnErrorExit>
+<Desc><![CDATA[]]></Desc>
+<Nodes>
+</Nodes>
+</GlobalNodes>
+<Data>
+<Lists>
+</Lists>
+<Tables>
+</Tables>
+</Data>
+</Script>
+<!--B50EE281DE762F21E349DE6A0BC3A0D1444176166D100F0E342B95E4D82B5A77-->
